@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1971112F-2053-4832-A5C4-6C196FB33107}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gauges</RootNamespace>
+    <AssemblyName>Gauges</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\Client\Client.cs" />
+    <Compile Include="Entity\Client\Urls.cs" />
+    <Compile Include="Entity\Content\TopContent.cs" />
+    <Compile Include="Entity\Content\Page.cs" />
+    <Compile Include="Entity\Content\TopContentUrls.cs" />
+    <Compile Include="Entity\Gauge\Gauge.cs" />
+    <Compile Include="Entity\Gauge\GaugeUrls.cs" />
+    <Compile Include="Entity\Gauge\HourlyStats.cs" />
+    <Compile Include="Entity\Gauge\OverallStats.cs" />
+    <Compile Include="Entity\Gauge\DailyStats.cs" />
+    <Compile Include="Entity\Locations\Location.cs" />
+    <Compile Include="Entity\Locations\LocationUrls.cs" />
+    <Compile Include="Entity\Locations\ViewLocations.cs" />
+    <Compile Include="Entity\Locations\Region.cs" />
+    <Compile Include="Entity\Me\Me.cs" />
+    <Compile Include="Entity\Me\MyUrls.cs" />
+    <Compile Include="Entity\Referrers\Referrer.cs" />
+    <Compile Include="Entity\Referrers\TopReferrers.cs" />
+    <Compile Include="Entity\Referrers\TopReferrersUrl.cs" />
+    <Compile Include="Entity\Resolution\AllResolutions.cs" />
+    <Compile Include="Entity\Resolution\BrowserResolution.cs" />
+    <Compile Include="Entity\Resolution\ResolutionUrls.cs" />
+    <Compile Include="Entity\SearchEngines\SearchEngine.cs" />
+    <Compile Include="Entity\SearchEngines\SearchEngines.cs" />
+    <Compile Include="Entity\SearchEngines\SearchEngineUrls.cs" />
+    <Compile Include="Entity\SearchTerms\SearchTerms.cs" />
+    <Compile Include="Entity\SearchTerms\SearchTermUrls.cs" />
+    <Compile Include="Entity\SearchTerms\SearchTerm.cs" />
+    <Compile Include="Entity\Share\Share.cs" />
+    <Compile Include="Entity\Share\ShareUrls.cs" />
+    <Compile Include="Entity\Technology\Browser.cs" />
+    <Compile Include="Entity\Technology\BrowserVersion.cs" />
+    <Compile Include="Entity\Technology\Platform.cs" />
+    <Compile Include="Entity\Technology\Technology.cs" />
+    <Compile Include="Entity\Technology\TechnologyUrls.cs" />
+    <Compile Include="Entity\Traffic\DailyTraffic.cs" />
+    <Compile Include="Entity\Traffic\GaugeTraffic.cs" />
+    <Compile Include="Entity\Traffic\TrafficUrls.cs" />
+    <Compile Include="Service\GaugeContentService.cs" />
+    <Compile Include="Service\GaugeGaugeService.cs" />
+    <Compile Include="Service\GaugeLocationService.cs" />
+    <Compile Include="Service\GaugeMeService.cs" />
+    <Compile Include="Service\GaugeReferrerService.cs" />
+    <Compile Include="Service\GaugeResolutionService.cs" />
+    <Compile Include="Service\GaugeSearchEngineService.cs" />
+    <Compile Include="Service\GaugeSearchTermService.cs" />
+    <Compile Include="Service\GaugeService.cs" />
+    <Compile Include="Mapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\GaugeClientService.cs" />
+    <Compile Include="Service\GaugeShareService.cs" />
+    <Compile Include="Service\GaugeTechnologyService.cs" />
+    <Compile Include="Service\GaugeTrafficService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

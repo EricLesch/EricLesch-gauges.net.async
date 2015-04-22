@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gauges", "gauges\Gauges.csproj", "{1971112F-2053-4832-A5C4-6C196FB33107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaugeServiceTest", "GaugeServiceTest\GaugeServiceTest.csproj", "{28C530E9-4074-4DDF-8D5D-B0836D1281CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1971112F-2053-4832-A5C4-6C196FB33107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1971112F-2053-4832-A5C4-6C196FB33107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1971112F-2053-4832-A5C4-6C196FB33107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1971112F-2053-4832-A5C4-6C196FB33107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C530E9-4074-4DDF-8D5D-B0836D1281CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C530E9-4074-4DDF-8D5D-B0836D1281CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C530E9-4074-4DDF-8D5D-B0836D1281CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C530E9-4074-4DDF-8D5D-B0836D1281CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
